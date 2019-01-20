@@ -257,15 +257,17 @@
             
                 <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 			
-            <div id="back" style="display:none;width: 50px;height: 50px; position: fixed; right: 50px; bottom: 50px; background: white;z-index: 999"></div>
+            <div id="back" style="display:none;width: 50px;height: 50px; position: fixed; right: 50px; bottom: 50px;z-index: 999">
+                <img src="http://plgu35o1f.bkt.clouddn.com/top%20%282%29.gif" alt="" style="width: 60%;height: 100%;">
+            </div>
 
         </div>
         <script>
             $(window).scroll(function(){
                 if($(window).scrollTop() >200){
-                    $('#back').show();
+                    $('#back').show(1000);
                 }else {
-                    $('#back').hide();
+                    $('#back').hide(1000);
                 }
             })
             $('#back').click(function(){
