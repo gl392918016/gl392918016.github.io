@@ -207,7 +207,16 @@ $ <span class="token function">git</span> config --global user.name <span class=
 </code></pre>
 <h5 id="12、最后输入命令-生成及部署。下面命令是简写，所有命令可以-gt-查看这里-lt"><a href="#12、最后输入命令-生成及部署。下面命令是简写，所有命令可以-gt-查看这里-lt" class="headerlink" title="12、最后输入命令,生成及部署。下面命令是简写，所有命令可以&gt;查看这里&lt;"></a>12、最后输入命令,生成及部署。下面命令是简写，所有命令可以<a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">&gt;查看这里&lt;</a></h5><pre class=" language-bash"><code class="language-bash">$ hexo d -g
 </code></pre>
-</li>
+<h5 id="13、接下来可以绑定自己的域名，我是在阿里云买的，记得先进行阿里云的实名认证。"><a href="#13、接下来可以绑定自己的域名，我是在阿里云买的，记得先进行阿里云的实名认证。" class="headerlink" title="13、接下来可以绑定自己的域名，我是在阿里云买的，记得先进行阿里云的实名认证。"></a>13、接下来可以绑定自己的域名，我是在阿里云买的，记得先进行阿里云的实名认证。</h5></li>
+</ul>
+<ul>
+<li>13-1、打开cmd，输入命令，得到IP<pre class=" language-bash"><code class="language-bash">$ <span class="token function">ping</span> 你创建的github仓库名称
+</code></pre>
+<img src="http://plgu35o1f.bkt.clouddn.com/9.png" alt="图片"></li>
+<li>13-2、在阿里云网站找到你购买的域名，点击解析-&gt;新手引导，输入你得到的IP。<br><img src="http://plgu35o1f.bkt.clouddn.com/10.png" alt="图片"></li>
+<li>13-3、然后修改主机记录为www的，箭头表示需要修改的地方。<br><img src="http://plgu35o1f.bkt.clouddn.com/11.png" alt="图片"></li>
+<li>13-4、接下来到你的github中，找到本章上面提到的Github pages中的Custom domain处填上你的域名，点击保存。<br><img src="http://plgu35o1f.bkt.clouddn.com/12.png" alt="图片"></li>
+<li>13-5、然后需要在你的项目根目录找到source文件，创建一个文档，写入你的域名，保存。重命名为CNAME，并去掉后缀。重新执行第12步就完成了。<br><img src="http://plgu35o1f.bkt.clouddn.com/13.png" alt="图片"></li>
 </ul>
 
             </div>
