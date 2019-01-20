@@ -24,7 +24,7 @@
           content: ' ';
           position: fixed;
           top: 0;
-          background: url('/img/bg.jpg') center 0 no-repeat;
+          background: url('/images/bg.jpg') center 0 no-repeat;
           right: 0;
           bottom: 0;
           left: 0;
@@ -62,6 +62,8 @@
     <script src="/js/skel.min.js"></script>
     <script src="/js/util.js"></script>
     <script src="/js/main.js"></script>
+
+
 	
 <link rel="stylesheet" href="/css/prism-hopscotch.css" type="text/css"></head>
     
@@ -86,11 +88,11 @@
         <!-- Nav 导航条 start -->
         <nav id="nav" class="special">
             <ul class="menu links">
-			<!-- Homepage  主页  --> 
+			<!-- Homepage  主页  -->
 			<li>
 	            <a href="/" rel="nofollow">主页</a>
 	        </li>
-			<!-- categories_name  分类   --> 
+			<!-- categories_name  分类   -->
 	        
 	        <li class="active">
 	            <a href="#s1">分类</a>
@@ -100,7 +102,7 @@
 	                    </li></ul>
 	        </li>
 	        
-	        <!-- archives  归档   --> 
+	        <!-- archives  归档   -->
 	        
 	        <li class="active">
 	            <a href="#s1">归档</a>
@@ -110,7 +112,7 @@
 	                    </li></ul>
 	        </li>
 	        
-	        
+
 		        <!-- Pages 自定义   -->
 		        
 		        <li>
@@ -144,7 +146,10 @@
                     </li>
                     
 			</ul>
+
 </nav>
+
+
 
         <div id="main">
             <div class="post_page_title_img" style="height: 25rem;background-image: url(http://plgu35o1f.bkt.clouddn.com/%E4%B8%80%E8%B5%B7.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
@@ -264,7 +269,24 @@ $('.btn_click_load').click(function() {
             
                 <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 			
+            <div id="back" style="display:none;width: 50px;height: 50px; position: fixed; right: 50px; bottom: 50px; background: white;z-index: 999"></div>
+
         </div>
+        <script>
+            $(window).scroll(function(){
+                if($(window).scrollTop() >200){
+                    $('#back').show();
+                }else {
+                    $('#back').hide();
+                }
+            })
+            $('#back').click(function(){
+                $('body,html').animate({ scrollTop: 0 },1000);
+                return false;
+            })
+
+        </script>
+
     </div>
 </body>
 
